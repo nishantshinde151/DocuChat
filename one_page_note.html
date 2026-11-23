@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Automation Task - One Page Note</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 12mm 15mm 12mm 15mm;
+  }
+  * {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    background-color: #ffffff;
+    line-height: 1.4;
+    font-size: 11pt;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .title-area h1 {
+    margin: 0;
+    font-size: 18pt;
+    font-weight: 700;
+    color: #0f172a;
+    letter-spacing: -0.5px;
+  }
+  .title-area p {
+    margin: 3px 0 0 0;
+    font-size: 10pt;
+    color: #64748b;
+    font-weight: 500;
+  }
+  .badge {
+    background-color: #eff6ff;
+    border: 1px solid #bfdbfe;
+    color: #1d4ed8;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 9pt;
+    font-weight: 600;
+    text-align: right;
+  }
+  .meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 8px 14px;
+    margin-bottom: 14px;
+    font-size: 9.5pt;
+    gap: 4px 16px;
+  }
+  .meta-item strong {
+    color: #334155;
+  }
+  .section {
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-size: 11.5pt;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin: 0 0 6px 0;
+    display: flex;
+    align-items: center;
+    border-left: 3px solid #2563eb;
+    padding-left: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .tools-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .tool-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 9.5pt;
+  }
+  .tool-card strong {
+    color: #0f172a;
+  }
+  .tool-card span {
+    color: #475569;
+  }
+  .steps-container {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 8px 12px;
+  }
+  .step-item {
+    font-size: 9.5pt;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: baseline;
+  }
+  .step-item:last-child {
+    margin-bottom: 0;
+  }
+  .step-num {
+    background-color: #2563eb;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 8pt;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+  .step-text strong {
+    color: #0f172a;
+  }
+  .step-text {
+    color: #334155;
+  }
+  .domain-box {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 9.5pt;
+  }
+  .domain-box strong {
+    color: #1e40af;
+  }
+  .domain-box p {
+    margin: 3px 0 0 0;
+    color: #334155;
+  }
+  .plan-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9.2pt;
+    margin-top: 4px;
+  }
+  .plan-table th {
+    background-color: #f1f5f9;
+    color: #1e293b;
+    font-weight: 600;
+    text-align: left;
+    padding: 6px 8px;
+    border-bottom: 1px solid #cbd5e1;
+  }
+  .plan-table td {
+    padding: 5px 8px;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: top;
+  }
+  .plan-table tr:last-child td {
+    border-bottom: none;
+  }
+  .plan-table tr:nth-child(even) {
+    background-color: #f8fafc;
+  }
+  .week-badge {
+    font-weight: 700;
+    color: #2563eb;
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="title-area">
+      <h1>AI Automation Task – One-Page Note</h1>
+      <p>Round 1: Practical 48-Hour Technical Submission</p>
+    </div>
+    <div class="badge">
+      Status: Verified & Working
+    </div>
+  </div>
+
+  <div class="meta-grid">
+    <div class="meta-item"><strong>Candidate Name:</strong> Nishant Sachin Shinde</div>
+    <div class="meta-item"><strong>Date:</strong> November 2026</div>
+    <div class="meta-item"><strong>Primary Domain:</strong> 1. Lead Automation</div>
+    <div class="meta-item"><strong>Secondary Domain:</strong> 2. WhatsApp & AI Calling Bots</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">1. Tools Used</div>
+    <ul class="tools-list">
+      <li class="tool-card"><strong>Google Forms:</strong> <span>Lead capture portal collecting candidate details & bio.</span></li>
+      <li class="tool-card"><strong>Google Sheets:</strong> <span>Database ledger storing incoming leads & AI responses.</span></li>
+      <li class="tool-card"><strong>Make.com:</strong> <span>Cloud orchestration engine executing real-time triggers.</span></li>
+      <li class="tool-card"><strong>OpenAI (ChatGPT):</strong> <span>Contextual LLM generating styled, personalized HTML replies.</span></li>
+      <li class="tool-card"><strong>Gmail API:</strong> <span>Automated transactional mailer sending personalized HTML emails.</span></li>
+      <li class="tool-card"><strong>Twilio / WhatsApp:</strong> <span>Instant messaging webhook integration for direct applicant alerts.</span></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">2. How the Automation Works</div>
+    <div class="steps-container">
+      <div class="step-item">
+        <span class="step-num">1</span>
+        <span class="step-text"><strong>Lead Capture:</strong> An applicant submits the Google Form; response data instantly streams into Google Sheets.</span>
+      </div>
+      <div class="step-item">
+        <span class="step-num">2</span>
+        <span class="step-text"><strong>Trigger & Polling:</strong> Make.com watches the sheet via <em>Watch New Rows</em>, ingesting candidate name, email, location, and bio.</span>
+      </div>
+      <div class="step-item">
+        <span class="step-num">3</span>
+        <span class="step-text"><strong>AI Personalization:</strong> Lead parameters are fed to OpenAI with strict prompts, generating an elegant, mobile-responsive HTML card.</span>
+      </div>
+      <div class="step-item">
+        <span class="step-num">4</span>
+        <span class="step-text"><strong>Dynamic Dispatch:</strong> Gmail automatically dispatches the customized HTML welcome email to the candidate's exact address.</span>
+      </div>
+      <div class="step-item">
+        <span class="step-num">5</span>
+        <span class="step-text"><strong>Audit Feedback Loop:</strong> Make updates the source sheet, logging the AI response into the <em>AI Generated Response</em> column.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">3. Chosen Work Domain & Rationale</div>
+    <div class="domain-box">
+      <strong>Primary: Lead Automation | Secondary: WhatsApp & AI Calling Bots</strong>
+      <p>Modern businesses face severe response latency. By uniting no-code orchestration (Make.com) with conversational AI (OpenAI & WhatsApp API), lead response times shrink from hours to seconds, significantly improving qualification rates and conversion velocity.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">4. Plan for the First 30 Days</div>
+    <table class="plan-table">
+      <thead>
+        <tr>
+          <th style="width: 22%;">Timeline</th>
+          <th style="width: 33%;">Focus Area</th>
+          <th style="width: 45%;">Deliverables & Outcomes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="week-badge">Week 1 (Days 1–7)</td>
+          <td><strong>Audit & API Setup</strong></td>
+          <td>Audit manual lead workflows; configure core API keys, webhooks, and security credentials.</td>
+        </tr>
+        <tr>
+          <td class="week-badge">Week 2 (Days 8–15)</td>
+          <td><strong>Core Pipeline Rollout</strong></td>
+          <td>Deploy end-to-end form-to-CRM syncing; establish multi-channel instant team alerts (Slack/Email).</td>
+        </tr>
+        <tr>
+          <td class="week-badge">Week 3 (Days 16–22)</td>
+          <td><strong>AI & Conversational Layer</strong></td>
+          <td>Implement AI qualification scoring and automated two-way WhatsApp follow-up bots.</td>
+        </tr>
+        <tr>
+          <td class="week-badge">Week 4 (Days 23–30)</td>
+          <td><strong>Analytics & SOP Handover</strong></td>
+          <td>Deploy Looker Studio tracking dashboard, stress-test edge cases, and produce client SOPs.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

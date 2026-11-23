@@ -1,0 +1,20 @@
+# DocuChat AI Dependencies
+
+# Backend & API
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.0.0
+python-multipart>=0.0.9
+
+# Document Processing & RAG
+pypdf>=5.0.0
+
+# Local AI / Transformers (Optional for on-device inference)
+torch>=2.2.0
+transformers>=4.40.0
+accelerate>=0.28.0
+
+# Optional Streamlit & Gemini support
+streamlit>=1.35.0
+google-genai>=0.1.1
+reportlab>=4.0.0
